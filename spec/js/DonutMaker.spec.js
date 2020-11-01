@@ -55,6 +55,67 @@ describe('FEATURE 3 : The cost of each Auto Clicker will go up with each purchas
         expect(underTest._autoClickerCost).toBe(121);
     });
 
-    
+});
+describe('FEATURE 4 : Ensure that there are enough donuts to buy an Auto Clicker.',() => {
+    beforeEach(() => {
+        underTest = new DonutMaker();
+    });
+    it('Prevent the Auto Clicker count from going up if there are not enough donuts to purchase a Auto Clicker.', () => {
+        underTest.buyAutoClicker();
+        expect(underTest._autoClickerCount).toBe(0);
+    });
+});
+describe('FEATURE 5 : The amount of Auto Clickers affect the amount of donuts added when an Activate Auto Clickers event is called.', () => {
+    beforeEach(() => {
+        underTest = new DonutMaker();
+        underTest.stashDonutsForTesting();
+    });
+    it('When the activate Auto Clickers event is executed, increase the donut total by the amount of Auto Clickers owned.', () => {
+        underTest.buyAutoClicker();
+        underTest.buyAutoClicker();
+        underTest.activateAutoClickers();
+        expect(underTest._donutCount).toBe(792);
+    });
 
+});
+describe('FEATURE 6 : Be able to purchase the first Donut Multiplier with 10 donuts from your donut count.', () => {
+    beforeEach(() => {
+        underTest = new DonutMaker();
+        underTest.stashDonutsForTesting();
+    });
+    it('Can retrieve and add to the Donut Multiplier count.', () => {
+        // Action
+        underTest.buyDonutMultiplier();
+        // Assertion
+        expect(underTest._donutMultiplierCount).toBe(1); 
+    });
+    it('Subtract the amount of the Donut Multiplier cost from the donut count.', () => {
+        underTest.buyDonutMultiplier();
+        expect(underTest._donutCount).toBe(990);
+    });
+
+});
+describe('FEATURE 7 : The cost of each Donut Multiplier will go up with each purchase.', () => {
+    beforeEach(() => {
+        underTest = new DonutMaker();
+        underTest.stashDonutsForTesting();
+    });
+    it('Increases the cost of the first Donut Multiplier by ten percent', () => {
+        underTest.buyDonutMultiplier();
+        expect(underTest._donutMultiplierCost).toBe(11);
+    });
+    it('Increases the cost of an additional Donut Multiplier by ten percent', () => {
+        underTest.buyDonutMultiplier();
+        underTest.buyDonutMultiplier();
+        expect(underTest._donutMultiplierCost).toBe(12.1);
+    });
+});
+describe('FEATURE 8 : Ensure that there are enough donuts to buy a Donut Multiplier.', () => {
+    beforeEach(() => {
+        underTest = new DonutMaker();
+    });
+    it('Prevent the Donut Multiplier count from going up if there are not enough donuts to purchase a Donut Multiplier.', () => {
+        underTest.buyDonutMultiplier();
+        expect(underTest._donutMultiplierCount).toBe(0);
+    });
 });

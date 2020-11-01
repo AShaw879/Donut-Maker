@@ -3,6 +3,8 @@ class DonutMaker {
         this._donutCount = 0;
         this._autoClickerCount = 0;
         this._autoClickerCost = 100;
+        this._donutMultiplierCount = 0;
+        this._donutMultiplierCost = 10;
 
     }
 
@@ -11,6 +13,7 @@ class DonutMaker {
     }
     recordClick() {
         this._donutCount++;
+        // this._donutCount = this._donutCount + Math.pow(1.2, this._donutMultiplierCount);
     }
     get donutCount() {
         return this._donutCount;
@@ -19,9 +22,13 @@ class DonutMaker {
     //     this._donutCount++;
     // }
     buyAutoClicker() {
-        this._donutCount -= this._autoClickerCost;
-        this._autoClickerCount++;
-        this._autoClickerCost = this._autoClickerCost + (this._autoClickerCost * 0.1);
+        if(this._donutCount >= this._autoClickerCost) {
+            // logic for when an auto clicker is bought
+            this._donutCount -= this._autoClickerCost;
+            // this._donutCount = this._donutCount - this._autoClickerCost;
+            this._autoClickerCount++;
+            this._autoClickerCost = this._autoClickerCost + (this._autoClickerCost * 0.1);
+        }
     }
     // ---------------All tests passing feature 1 & 2----------------------------------
     // recordAutoClick() {
@@ -32,6 +39,23 @@ class DonutMaker {
     }
     get autoClickerCost(){
         return this._autoClickerCost;
+    }
+    activateAutoClickers() {
+        this._donutCount += this._autoClickerCount;
+        // this._donutCount = this._donutCount + this._autoClickerCount;
+    }
+    buyDonutMultiplier(){
+        if(this.donutCount >= this._donutMultiplierCost){
+            this._donutMultiplierCount++;
+            this._donutCount -= this._donutMultiplierCost;
+            this._donutMultiplierCost = this._donutMultiplierCost + (this._donutMultiplierCost * 0.1);
+        }
+    }
+    get donutMultiplierCount(){
+        return this._donutMultiplierCount;
+    }
+    get donutMultiplierCost() {
+        return this._donutMultiplierCost;
     }
 
 
