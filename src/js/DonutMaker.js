@@ -20,11 +20,11 @@ class DonutMaker {
     }
     // recordAutoClick() {
     //     // this._donutCount++;
-     
+
     // }
     //------------------------------Auto Clicker------------------------------------------------
     buyAutoClicker() {
-        if(this._donutCount >= this._autoClickerCost) {
+        if (this._donutCount >= this._autoClickerCost) {
             // logic for when an auto clicker is bought
             this._donutCount -= this._autoClickerCost;
             // this._donutCount = this._donutCount - this._autoClickerCost;
@@ -50,11 +50,11 @@ class DonutMaker {
 
     //-------------------------------Donut Multiplier-----------------------------------------------
     buyDonutMultiplier() {
-        if(this.donutCount >= this._donutMultiplierCost) {
+        if (this.donutCount >= this._donutMultiplierCost) {
             this._donutMultiplierCount++;
             this._donutCount -= this._donutMultiplierCost;
             this._donutMultiplierCost = this._donutMultiplierCost + (this._donutMultiplierCost * 0.1);
-            
+
         }
     }
     get donutMultiplierCount() {
@@ -63,7 +63,4 @@ class DonutMaker {
     get donutMultiplierCost() {
         return this._donutMultiplierCost;
     }
-    //------------------All Tests Passing To Here-----------------------
-
-
 }

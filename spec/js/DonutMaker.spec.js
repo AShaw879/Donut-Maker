@@ -128,7 +128,6 @@ describe('FEATURE 2.3 : Ensure that there are enough donuts to buy a Donut Multi
         expect(underTest._donutMultiplierCount).toBe(0);
     });
 });
-//--------------------------------------------------All Tests Passing To Here-----------------------------------------------------------------------------
 describe('FEATURE 2.4 : The first Donut Multiplier should increase the value of a click 1.2x.', () => {
     beforeEach(() => {
         underTest = new DonutMaker();
@@ -161,7 +160,7 @@ describe('FEATURE 2.5 : The amount the subsequent Donut Multipliers click bonus 
         underTest.buyDonutMultiplier();
         underTest.recordClick();
         expect(underTest._donutCount).toBeCloseTo(968.628)
-     });
+    });
 });
 describe('FEATURE 2.6 : The Donut Multipliers click bonus will apply to clicks from the Auto Clicker. ', () => {
     beforeEach(() => {
