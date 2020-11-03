@@ -12,15 +12,17 @@ class DonutMaker {
         this._donutCount += 1000;
     }
     recordClick() {
-        this._donutCount++;
-        // this._donutCount = this._donutCount + Math.pow(1.2, this._donutMultiplierCount);
+        // this._donutCount++;
+        this._donutCount = this._donutCount + Math.pow(1.2, this._donutMultiplierCount);
     }
     get donutCount() {
         return this._donutCount;
     }
     // recordAutoClick() {
-    //     this._donutCount++;
+    //     // this._donutCount++;
+     
     // }
+    //------------------------------Auto Clicker------------------------------------------------
     buyAutoClicker() {
         if(this._donutCount >= this._autoClickerCost) {
             // logic for when an auto clicker is bought
@@ -28,35 +30,40 @@ class DonutMaker {
             // this._donutCount = this._donutCount - this._autoClickerCost;
             this._autoClickerCount++;
             this._autoClickerCost = this._autoClickerCost + (this._autoClickerCost * 0.1);
+            this._autoClickerCost = Math.round(this._autoClickerCost);
         }
     }
-    // ---------------All tests passing feature 1 & 2----------------------------------
     // recordAutoClick() {
     //     this._autoClickerCount++;
     // }
     get autoClickerCount() {
         return this._autoClickerCount;
     }
-    get autoClickerCost(){
+    get autoClickerCost() {
         return this._autoClickerCost;
     }
     activateAutoClickers() {
-        this._donutCount += this._autoClickerCount;
+        // this._donutCount += this._autoClickerCount;
         // this._donutCount = this._donutCount + this._autoClickerCount;
+        this._donutCount = this._donutCount + this._autoClickerCount * Math.pow(1.2, this._donutMultiplierCount);
     }
-    buyDonutMultiplier(){
-        if(this.donutCount >= this._donutMultiplierCost){
+
+    //-------------------------------Donut Multiplier-----------------------------------------------
+    buyDonutMultiplier() {
+        if(this.donutCount >= this._donutMultiplierCost) {
             this._donutMultiplierCount++;
             this._donutCount -= this._donutMultiplierCost;
             this._donutMultiplierCost = this._donutMultiplierCost + (this._donutMultiplierCost * 0.1);
+            
         }
     }
-    get donutMultiplierCount(){
+    get donutMultiplierCount() {
         return this._donutMultiplierCount;
     }
     get donutMultiplierCost() {
         return this._donutMultiplierCost;
     }
+    //------------------All Tests Passing To Here-----------------------
 
 
 }
