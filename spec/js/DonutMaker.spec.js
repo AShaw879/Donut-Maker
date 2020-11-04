@@ -63,6 +63,7 @@ describe('FEATURE 1.3 : The cost of each Auto Clicker will go up with each purch
     });
 });
 
+
 describe('FEATURE 1.4 : Ensure that there are enough donuts to buy an Auto Clicker.', () => {
     beforeEach(() => {
         underTest = new DonutMaker();
