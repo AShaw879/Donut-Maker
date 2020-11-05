@@ -2,5 +2,11 @@
   flex-direction: row;
   /* justify-content: center;
   align-items: flex-start; */
-  
-  }
+   }
+
+   .dropdown {
+    margin:25px 25px 25px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+     }

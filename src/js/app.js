@@ -3,7 +3,12 @@ import {
 } from "/src/js/DonutMaker.js";
 
 const donutMaker = new DonutMaker();
-//-----------------------Create Click Me Button To Make Donuts--------------------------------
+//-----------------------Create Click Me Button To Make Donuts-------------------------------
+const updateDonutCount = function (donutMaker) {
+    const donutCount = document.querySelector(".donut-count");
+    donutCount.innerText = donutMaker.donutCount;
+};
+
 const donutButton = document.querySelector(".donut-button");
 
 donutButton.addEventListener("click", () => {
@@ -12,24 +17,29 @@ donutButton.addEventListener("click", () => {
     updateDonutCount(donutMaker);
 });
 
-const updateDonutCount = function (donutMaker) {
-    const donutCount = document.querySelector(".donut-count");
-    donutCount.innerText = donutMaker.donutCount;
-};
+
 //----------------------Purchase Auto Clicker Button & Keep Track Of Number Of Auto Clickers------------------------
-const purchaseAutoClickerButton = document.querySelector(".purchase-auto-clicker-button");
-
-purchaseAutoClickerButton.addEventListener("click", () => {
-    console.log('purchase auto clicker button clicked');   //remember to take this out
-    donutMaker.buyAutoClicker();
-    updateAutoClickerCount(donutMaker);
-    updateDonutCount(donutMaker);
-});
-
 const updateAutoClickerCount = function (donutMaker) {
     const autoClickerCount = document.querySelector(".auto-clicker-count");
     autoClickerCount.innerText = donutMaker.autoClickerCount;
 };
+
+const purchaseAutoClickerButton = document.querySelector(".purchase-auto-clicker-button");
+
+purchaseAutoClickerButton.addEventListener("click", () => { //original
+    donutMaker.buyAutoClicker();
+    updateAutoClickerCount(donutMaker);
+    updateDonutCount(donutMaker);  //original 
+    displayAutoClickerCost(donutMaker);
+    activateAutoClicker(donutMaker);
+    // disableBuyAutoClicker(donutMaker);
+});
+const displayAutoClickerCost = function(donutMaker) {
+    const autoClickerCost = document.querySelector(".auto-clicker-cost");
+    autoClickerCost.innerText = "next Auto-Clicker-Cost:" + donutMaker.autoClickerCost;
+};
+
+
 //--------------  Purchase Donut Multiplier Button & Keep Track Of Number of Donut Multipliers---------------------
 const purchaseDonutMultiplierButton = document.querySelector(".purchase-donut-multiplier-button");
 
