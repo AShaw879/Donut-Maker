@@ -41,6 +41,12 @@ const displayAutoClickerCost = function(donutMaker) {
 
 
 //--------------  Purchase Donut Multiplier Button & Keep Track Of Number of Donut Multipliers---------------------
+
+const updateDonutMultiplierCount = function (donutMaker) {
+    const donutMultiplierCount = document.querySelector(".donut-multiplier-count");
+    donutMultiplierCount.innerText = donutMaker.donutMultiplierCount;
+};
+
 const purchaseDonutMultiplierButton = document.querySelector(".purchase-donut-multiplier-button");
 
 purchaseDonutMultiplierButton.addEventListener("click", () => {
@@ -50,8 +56,10 @@ purchaseDonutMultiplierButton.addEventListener("click", () => {
     updateDonutCount(donutMaker);
 });
 
- const updateDonutMultiplierCount = function (donutMaker) {
-     const donutMultiplierCount = document.querySelector(".donut-multiplier-count");
-     donutMultiplierCount.innerText = donutMaker.donutMultiplierCount;
- };
+const displayDonutMultiplierCost = function(donutMaker) {
+    const donutMultiplierCost = document.querySelector(".donut-multiplier-cost");
+    donutMultiplierCost.innerText = "next Donut-Multiplier-Cost:" + donutMaker.donutMultiplierCost;
+};
+
+
  
