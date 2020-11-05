@@ -3,7 +3,7 @@ import {
 } from "/src/js/DonutMaker.js";
 
 const donutMaker = new DonutMaker();
-
+//-----------------------Create Click Me Button To Make Donuts--------------------------------
 const donutButton = document.querySelector(".donut-button");
 
 donutButton.addEventListener("click", () => {
@@ -16,7 +16,7 @@ const updateDonutCount = function (donutMaker) {
     const donutCount = document.querySelector(".donut-count");
     donutCount.innerText = donutMaker.donutCount;
 };
-
+//----------------------Purchase Auto Clicker Button & Keep Track Of Number Of Auto Clickers------------------------
 const purchaseAutoClickerButton = document.querySelector(".purchase-auto-clicker-button");
 
 purchaseAutoClickerButton.addEventListener("click", () => {
@@ -30,7 +30,7 @@ const updateAutoClickerCount = function (donutMaker) {
     const autoClickerCount = document.querySelector(".auto-clicker-count");
     autoClickerCount.innerText = donutMaker.autoClickerCount;
 };
-
+//--------------  Purchase Donut Multiplier Button & Keep Track Of Number of Donut Multipliers---------------------
 const purchaseDonutMultiplierButton = document.querySelector(".purchase-donut-multiplier-button");
 
 purchaseDonutMultiplierButton.addEventListener("click", () => {
@@ -44,3 +44,4 @@ purchaseDonutMultiplierButton.addEventListener("click", () => {
      const donutMultiplierCount = document.querySelector(".donut-multiplier-count");
      donutMultiplierCount.innerText = donutMaker.donutMultiplierCount;
  };
+ 

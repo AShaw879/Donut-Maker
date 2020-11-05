@@ -16,26 +16,26 @@ class DonutMaker {
         this._donutCount = this._donutCount + Math.pow(1.2, this._donutMultiplierCount);
     }
     get donutCount() {
-        return this._donutCount;
-    }
-    // recordAutoClick() {
-    //     // this._donutCount++;
+            return this._donutCount;
+        }
+        // recordAutoClick() {
+        //     // this._donutCount++;
 
     // }
     //------------------------------Auto Clicker------------------------------------------------
     buyAutoClicker() {
-        if (this._donutCount >= this._autoClickerCost) {
-            // logic for when an auto clicker is bought
-            this._donutCount -= this._autoClickerCost;
-            // this._donutCount = this._donutCount - this._autoClickerCost;
-            this._autoClickerCount++;
-            this._autoClickerCost = this._autoClickerCost + (this._autoClickerCost * 0.1);
-            this._autoClickerCost = Math.round(this._autoClickerCost);
+            if (this._donutCount >= this._autoClickerCost) {
+                // logic for when an auto clicker is bought
+                this._donutCount -= this._autoClickerCost;
+                // this._donutCount = this._donutCount - this._autoClickerCost;
+                this._autoClickerCount++;
+                this._autoClickerCost = this._autoClickerCost + (this._autoClickerCost * 0.1);
+                this._autoClickerCost = Math.round(this._autoClickerCost);
+            }
         }
-    }
-    // recordAutoClick() {
-    //     this._autoClickerCount++;
-    // }
+        // recordAutoClick() {
+        //     this._autoClickerCount++;
+        // }
     get autoClickerCount() {
         return this._autoClickerCount;
     }
