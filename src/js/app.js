@@ -10,7 +10,6 @@ const updateDonutCount = function (donutMaker) {
 };
 
 const donutButton = document.querySelector(".donut-button");
-
 donutButton.addEventListener("click", () => {
     console.log('Donut button clicked');  //remember to take this out
     donutMaker.recordClick();
@@ -25,13 +24,12 @@ const updateAutoClickerCount = function (donutMaker) {
 };
 
 const purchaseAutoClickerButton = document.querySelector(".purchase-auto-clicker-button");
-
 purchaseAutoClickerButton.addEventListener("click", () => { //original
     donutMaker.buyAutoClicker();
     updateAutoClickerCount(donutMaker);
     updateDonutCount(donutMaker);  //original 
     displayAutoClickerCost(donutMaker);
-    activateAutoClicker(donutMaker);
+    // activateAutoClicker(donutMaker);
     // disableBuyAutoClicker(donutMaker);
 });
 const displayAutoClickerCost = function(donutMaker) {
@@ -48,18 +46,27 @@ const updateDonutMultiplierCount = function (donutMaker) {
 };
 
 const purchaseDonutMultiplierButton = document.querySelector(".purchase-donut-multiplier-button");
-
 purchaseDonutMultiplierButton.addEventListener("click", () => {
     console.log('purchase donut multiplier button clicked');  //remember to take this out
     donutMaker.buyDonutMultiplier();
     updateDonutMultiplierCount(donutMaker);
     updateDonutCount(donutMaker);
+    displayDonutMultiplierCost(donutMaker);
+    // disablePurchaseDonutMultiplier(donutMaker);
 });
 
 const displayDonutMultiplierCost = function(donutMaker) {
     const donutMultiplierCost = document.querySelector(".donut-multiplier-cost");
     donutMultiplierCost.innerText = "next Donut-Multiplier-Cost:" + donutMaker.donutMultiplierCost;
 };
+
+// const disablePurchaseDonutMultiplier = function(donutMaker) {
+//     if (donutCount < donutMultiplierCost) {
+//         document.querySelector(".purhase-donutMultiplier-button").disabled = true;
+//     }
+// }
+
+
 
 
  
