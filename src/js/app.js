@@ -72,7 +72,7 @@ const displayDonutMultiplierCost = function (donutMaker) {
 function updateDonutMultiplierButton(donutMaker) {
     const lightUpPurchaseDonutMultiplierButton = document.querySelector(".purchase-donut-multiplier-button")
     lightUpPurchaseDonutMultiplierButton.classList.add('gray-out-donut-multiplier-button');
-    if(donutMaker.donutCount < donutMaker.donutMultiplierCost) {
+    if(donutMaker.donutCount <  donutMaker.donutMultiplierCost) {
         lightUpPurchaseDonutMultiplierButton.classList.toggle('gray-out-donut-multiplier-button');
     }
 }
