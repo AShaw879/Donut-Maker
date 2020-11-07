@@ -1,13 +1,15 @@
 class DonutMaker {
     constructor() {
-        this._donutCount = 100000000000; //********************************************CHANGE BACK TO 0*******************************************************
+        this._donutCount = 0; //********************************************CHANGE BACK TO 0*******************************************************
         this._autoClickerCount = 0;
         this._autoClickerCost = 100;
         this._donutMultiplierCount = 0;
         this._donutMultiplierCost = 10;
+        
 
     }
 
+   
     stashDonutsForTesting() {
         this._donutCount += 1000;
     }
@@ -63,6 +65,15 @@ class DonutMaker {
     }
     get donutMultiplierCost() {
         return this._donutMultiplierCost;
+    }
+
+
+    resetGame() {
+        this._donutCount = 0;
+        this._autoClickerCount = 0;
+        this._autoClickerCost = 100;
+        this._donutMultiplierCount = 0;
+        this._donutMultiplierCost = 10;
     }
 }
 export { DonutMaker }

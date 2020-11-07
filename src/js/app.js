@@ -7,8 +7,8 @@ const donutMaker = new DonutMaker();
 const updateDonutCount = function (donutMaker) {
     const donutCount = document.querySelector(".donut-count");
     // donutCount.innerText = "You have made:" + donutMaker.donutCount;
-    donutCount.innerText = "You have made:" + Math.round(donutMaker.donutCount*10)/10
-   };
+    donutCount.innerText = "You have made:" + Math.round(donutMaker.donutCount * 10) / 10
+};
 
 const donutButton = document.querySelector(".donut-button");
 donutButton.addEventListener("click", () => {
@@ -24,14 +24,14 @@ const updateAutoClickerCount = function (donutMaker) {
 };
 
 const purchaseAutoClickerButton = document.querySelector(".purchase-auto-clicker-button");
-purchaseAutoClickerButton.addEventListener("click", () => { 
+purchaseAutoClickerButton.addEventListener("click", () => {
     donutMaker.buyAutoClicker();
     updateAutoClickerCount(donutMaker);
-    updateDonutCount(donutMaker);  
+    updateDonutCount(donutMaker);
     displayAutoClickerCost(donutMaker);
-   
+
 });
-const displayAutoClickerCost = function(donutMaker) {
+const displayAutoClickerCost = function (donutMaker) {
     const autoClickerCost = document.querySelector(".auto-clicker-cost");
     autoClickerCost.innerText = "Next Auto-Clicker-Cost:" + donutMaker.autoClickerCost;
 };
@@ -46,7 +46,7 @@ const updateDonutMultiplierCount = function (donutMaker) {
 
 const purchaseDonutMultiplierButton = document.querySelector(".purchase-donut-multiplier-button");
 purchaseDonutMultiplierButton.addEventListener("click", () => {
-   
+
     donutMaker.buyDonutMultiplier();
     updateDonutMultiplierCount(donutMaker);
     updateDonutCount(donutMaker);
@@ -54,14 +54,48 @@ purchaseDonutMultiplierButton.addEventListener("click", () => {
     disablePurchaseDonutMultiplier(donutMaker);
 });
 
-const displayDonutMultiplierCost = function(donutMaker) {
+const displayDonutMultiplierCost = function (donutMaker) {
     const donutMultiplierCost = document.querySelector(".donut-multiplier-cost");
-    donutMultiplierCost.innerText = "Next Donut-Multiplier-Cost:" + Math.round(donutMaker.donutMultiplierCost*10)/10;
+    donutMultiplierCost.innerText = "Next Donut-Multiplier-Cost:" + Math.round(donutMaker.donutMultiplierCost * 10) / 10;
 };
 
-function updateDonutMultiplierButton() {
-    const lightUpPurchaseDonutMultiplierButton = document.querySelector("")
-}
+// function updateDonutMultiplierButton() {
+//     const lightUpPurchaseDonutMultiplierButton = document.querySelector(".purchase-donut-multiplier-button")
+//     lightUpPurchaseDonutMultiplierButton.classList.add('lightUpButton');
+//     if(donutCount < donutMultiplierCost) {
+//         lightUpPurchaseDonutMultiplierButton.classList.toggle('lightUpButton');
+//     }
+// }
+
+
+
+
+//----------------------------Reset Game Button---------------------------------------------------------------------
+const activateResetGame = document.querySelector(".reset-game");
+activateResetGame.addEventListener("click", () => {
+//donutMaker = new DonutMaker();
+    donutMaker.resetGame();
+    updateDonutCount(donutMaker);
+    updatedonutMultiplierCount(donutMaker);
+    displayDonutMultiplierCost(donutMaker);
+    updateAutoClickerCount(donutMaker);
+    displayAutoClickerCost(donutMaker);
+});
+
+
+
+
+//document.querySelector(".reset-button").reset;
+
+
+
+
+
+
+
+// function updateDonutMultiplierButton() {
+//     const lightUpPurchaseDonutMultiplierButton = document.querySelector("")
+// }
 
 // const disablePurchaseDonutMultiplier = function(donutMaker) {
 //     if (donutCount < donutMultiplierCost) {
@@ -93,4 +127,3 @@ function updateDonutMultiplierButton() {
 
 
 
- 
