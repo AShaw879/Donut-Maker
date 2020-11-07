@@ -72,3 +72,61 @@ html {
 .dropdown:hover .dropbtn {
     background-color:rgb(255, 192, 250) ;
 }
+
+
+.donut {
+  background-color: navy; 
+  border: none;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 4%;
+}
+
+.auto-clicker {
+  background-color: navy; 
+  border: none;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 4%; 
+}
+
+.donut-multiplier {
+    background-color: navy; 
+    border: none;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 4%;
+}
+
+.reset {
+    background-color: navy; 
+    border: none;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 4%;
+
+}

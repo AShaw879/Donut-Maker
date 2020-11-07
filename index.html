@@ -10,14 +10,17 @@
 </head>
 
 <body>
-    <header class="header-container">
-        <h1 class="main-title">Fred the Baker Baking Company</h1>
+    <header>
+        <div class="title">
+            <h1 class="main-title">Fred the Baker Baking Company</h1>
+        </div>
         <nav>
             <div class="dropdown">
                 <button class="dropbtn">Menu</button>
                 <div class="dropdown-content">
-                    <a href="./about.html">About Us</a>
-                    <a class= "inspiration" href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Our Inspiration</a>
+                    <a href="./about-us.html">About Us</a>
+                    <a class="inspiration" href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Our
+                        Inspiration</a>
                     <a href="./contactUs.html">Contact Us</a>
                     <a href="./developer.html">About the Developer</a>
                 </div>
@@ -26,25 +29,28 @@
     </header>
 
     <main>
-        <button class="donut-button">Make A Donut</button>
-        <div class="donut-count">0</div>
+        <div class="parent">
+            <button class="donut">
+                <div class="donut-button">Make A Donut</div>
+                <div class="donut-count">0</div>
+            </button>
 
-        <section>
-            <button class="purchase-auto-clicker-button">Buy Auto Clicker</button>
-            <div class="auto-clicker-count">0</div>
-            <div class="auto-clicker-cost">Next Auto Clicker Cost: 100 Donuts</div>
-        </section>
-      
+            <button class="auto-clicker">
+                <div class="purchase-auto-clicker-button">Buy Auto Clicker</div>
+                <div class="auto-clicker-count">0</div>
+                <div class="auto-clicker-cost">Next Auto Clicker Cost: 100 Donuts</div>
+            </button>
 
-        <section>
-            <button class="purchase-donut-multiplier-button">Buy Donut Multiplier</button>
-            <div class="donut-multiplier-count">0</div>
-            <div class="donut-multiplier-cost">Next Donut Multiplier Cost: 10 donuts</div>
-        </section>
+            <button class="donut-multiplier">
+                    <div class="purchase-donut-multiplier-button">Buy Donut Multiplier</div>
+                    <div class="donut-multiplier-count">0</div>
+                    <div class="donut-multiplier-cost">Next Donut Multiplier Cost: 10 donuts</div>
+            </button>
 
-        <section>
-            <button class="reset-button">Reset</button>
-        </section>
+            <button class="reset">
+                <div class="reset-button">Reset</div>
+            </button>
+        </div>
     </main>
 
     <div class="container">

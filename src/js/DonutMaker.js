@@ -1,6 +1,6 @@
 class DonutMaker {
     constructor() {
-        this._donutCount = 0;
+        this._donutCount = 100000000000; //********************************************CHANGE BACK TO 0*******************************************************
         this._autoClickerCount = 0;
         this._autoClickerCost = 100;
         this._donutMultiplierCount = 0;
@@ -47,6 +47,7 @@ class DonutMaker {
         // this._donutCount = this._donutCount + this._autoClickerCount;
         this._donutCount = this._donutCount + this._autoClickerCount * Math.pow(1.2, this._donutMultiplierCount);
     }
+    
 
     //-------------------------------Donut Multiplier-----------------------------------------------
     buyDonutMultiplier() {
