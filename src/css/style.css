@@ -88,7 +88,7 @@ html {
   border-radius: 4%;
 }
 
-.auto-clicker {
+.purchase-auto-clicker-button {
   background-color: navy; 
   border: none;
   color: white;
@@ -100,9 +100,10 @@ html {
   margin: 20px;
   cursor: pointer;
   border-radius: 4%; 
+  opacity: 0.45;
 }
 
-.donut-multiplier {
+.purchase-donut-multiplier-button {
     background-color: navy; 
     border: none;
     color: white;
@@ -114,6 +115,7 @@ html {
     margin: 20px;
     cursor: pointer;
     border-radius: 4%;
+    opacity: 0.45;
 }
 
 .reset {
@@ -129,4 +131,21 @@ html {
     cursor: pointer;
     border-radius: 4%;
 
+}
+.gray-out-auto-clicker-button {
+    opacity: 1;
+}
+
+.gray-out-donut-multiplier-button {
+    opacity: 1;
+}
+.donut-count {
+   
+    font-size: 3rem;
+    text-align: right;
+}
+.donut-count-text {
+    width: 200px;
+    height: 100px;
+    background-color: blueviolet;
 }

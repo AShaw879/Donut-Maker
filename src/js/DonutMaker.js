@@ -66,6 +66,10 @@ class DonutMaker {
     get donutMultiplierCost() {
         return this._donutMultiplierCost;
     }
+    // updateDonutMultiplierButton()
+    // if(this._donutCount <= this._donutMultiplierCost) {
+    //     lightUpPurchaseDonutMultiplierButton.classList.toggle('lightUpButton');
+    // }
 
 
     resetGame() {
