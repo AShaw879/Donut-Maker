@@ -16,7 +16,7 @@ main {
     margin: 25px 25px 25px 25px;
     padding: 25px, 25px 25px 25px;
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-gap: 20px;
    }
 
@@ -47,6 +47,11 @@ main {
 
 
 .purchase-donut-multiplier-button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.reset {
     grid-column-start: 1;
     grid-column-end: 2;
 }
