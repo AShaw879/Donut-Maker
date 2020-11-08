@@ -35,7 +35,7 @@ purchaseAutoClickerButton.addEventListener("click", () => {
 });
 const displayAutoClickerCost = function (donutMaker) {
     const autoClickerCost = document.querySelector(".auto-clicker-cost");
-    autoClickerCost.innerText = "Next Auto-Clicker-Cost:" + donutMaker.autoClickerCost;
+    autoClickerCost.innerText = "Current Auto Clicker Cost:" + donutMaker.autoClickerCost;
 };
 
 function updateAutoClickerButton(donutMaker) {
@@ -66,7 +66,7 @@ purchaseDonutMultiplierButton.addEventListener("click", () => {
 
 const displayDonutMultiplierCost = function (donutMaker) {
     const donutMultiplierCost = document.querySelector(".donut-multiplier-cost");
-    donutMultiplierCost.innerText = "Next Donut-Multiplier-Cost:" + Math.round(donutMaker.donutMultiplierCost * 10) / 10;
+    donutMultiplierCost.innerText = "Current Donut Multiplier Cost:" + Math.round(donutMaker.donutMultiplierCost * 10) / 10;
 };
 
 function updateDonutMultiplierButton(donutMaker) {
@@ -105,16 +105,53 @@ function updateDonutMultiplierButton(donutMaker) {
 
 
 
+//--------------------------------Practice Modal---------------------------------------------
 
-// function updateDonutMultiplierButton() {
-//     const lightUpPurchaseDonutMultiplierButton = document.querySelector("")
+
+
+// document.getElementsByTagName('h2')[0].onclick = function () {
+//     document.getElementsByTagName('h2')[0].style.fontSize = '30px';
+//     alert("https://github.com/AShaw879")
+   
+// }
+// const buttons = document.querySelectorAll('button');
+// const modal = document.querySelector('.modal');
+// const backdrop = document.querySelector('.backdrop');
+
+// const outputParagraph = document.querySelector('#quote');
+// const textEdit = document.querySelector('.modal textarea');
+
+// const quote = 'A Modal Component on a Webpage - how hard could it be?';
+// const editedQuote = '';
+// outputParagraph.textContent = quote;
+
+// function closeModal() {
+//     modal.style.display = 'none';
+//     backdrop.style.display = 'none';   
 // }
 
-// const disablePurchaseDonutMultiplier = function(donutMaker) {
-//     if (donutCount < donutMultiplierCost) {
-//         document.querySelector(".purhase-donutMultiplier-button").disabled = true;
-//     }
-// }
+// buttons[2].addEventListener("click", function() {
+//     modal.style.display = 'block';
+//     backdrop.style.display = 'block';
+//     editedQuote = quote;
+//     textEdit.value = quote;
+// });
+
+// buttons[0].addEventListener('click', closeModal);
+// backdrop.addEventListener('click', closeModal);
+
+
+
+// buttons[1].addEventListener('click', function() {
+//    closeModal();
+//     });
+
+//     textEdit.addEventListener('input', function() {
+//         editedQuote = textEdit.value;
+//     });
+
+
+
 
 // const myButton = document.querySelector(".donut-multiplier-button");
 // myButton.disabled = true;

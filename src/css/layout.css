@@ -1,5 +1,62 @@
 .main-title {
-  flex-direction: 
+    display: flex;
+    justify-content: center;
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+
+
+main {
+    width: 90%;
+    margin: 25px 25px 25px 25px;
+    padding: 25px, 25px 25px 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-gap: 20px;
+   }
+
+   .donut-multiplier-text {
+       grid-column-start: 2;
+       grid-column-end: 3;
+   }
+
+   .donut-count {
+       grid-column-start: 1;
+       grid-column-end: 2;
+   }
+
+.auto-clicker-text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.purchase-auto-clicker-button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.donut-multiplier-text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+.purchase-donut-multiplier-button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+
+
+
+/* .main-title {
+  flex-direction:  */
   /* justify-content: center;
   align-items: flex-start; */
    }
