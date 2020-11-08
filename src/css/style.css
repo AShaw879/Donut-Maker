@@ -139,13 +139,35 @@ html {
 .gray-out-donut-multiplier-button {
     opacity: 1;
 }
+
 .donut-count {
-   
     font-size: 3rem;
-    text-align: right;
+    text-align: center;
 }
+
 .donut-count-text {
     width: 200px;
-    height: 100px;
+    height: 200px;
     background-color: blueviolet;
+    font-size: 2rem;
+    text-align: center;
 }
+
+.auto-clicker-count {
+    font-size: 2rem;
+    text-align: center; 
+}
+
+.auto-clicker-cost {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.auto-clicker-text {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    font-size: 2rem;
+    text-align: center;
+}
+
