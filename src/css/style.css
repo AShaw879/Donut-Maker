@@ -171,3 +171,21 @@ html {
     text-align: center;
 }
 
+.donut-multiplier-count {
+    font-size: 2rem;
+    text-align: center;  
+}
+
+.donut-multiplier-cost {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.donut-multiplier-text {
+    width: 200px;
+    height: 300px;
+    background-color: blueviolet;
+    font-size: 2rem;
+    text-align: center; 
+}
+
