@@ -132,12 +132,13 @@ const activateResetGame = document.querySelector(".reset-game");
 activateResetGame.addEventListener("click", () => {
 // donutMaker = new DonutMaker();
     donutMaker.resetGame();
-    updateDonutCount(donutMaker);
-    updatedonutMultiplierCount(donutMaker);
-    // donutMaker.updateDonutMultiplierCount();
-    displayDonutMultiplierCost(donutMaker);
     updateAutoClickerCount(donutMaker);
+    updateDonutCount(donutMaker);
     displayAutoClickerCost(donutMaker);
+    updateDonutMultiplierCount(donutMaker);
+    updateDonutCount(donutMaker);
+    displayDonutMultiplierCost(donutMaker);
+  
 });
 
 
