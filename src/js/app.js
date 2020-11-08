@@ -81,19 +81,7 @@ function updateDonutMultiplierButton(donutMaker) {
 
 
 //----------------------------Reset Game Button---------------------------------------------------------------------
-// const activateResetGame = document.querySelector(".reset-game");
-// activateResetGame.addEventListener("click", () => {
-// donutMaker = new DonutMaker();
-// beforeEach(() => {
-//     underTest = new DonutMaker();
-    // donutMaker.resetGame();
-//     updateDonutCount(donutMaker);
-//     updatedonutMultiplierCount(donutMaker);
-//     // donutMaker.updateDonutMultiplierCount();
-//     displayDonutMultiplierCost(donutMaker);
-//     updateAutoClickerCount(donutMaker);
-//     displayAutoClickerCost(donutMaker);
-// });
+
 
 
 
@@ -109,37 +97,48 @@ function updateDonutMultiplierButton(donutMaker) {
 
 
 
-// document.getElementsByTagName('h2')[0].onclick = function () {
-//     document.getElementsByTagName('h2')[0].style.fontSize = '30px';
-//     alert("https://github.com/AShaw879")
-   
-// }
-// const buttons = document.querySelectorAll('button');
-// const modal = document.querySelector('.modal');
-// const backdrop = document.querySelector('.backdrop');
 
-// const outputParagraph = document.querySelector('#quote');
-// const textEdit = document.querySelector('.modal textarea');
+const developerInfoButton = document.querySelector('.developer-button');
+const modal = document.querySelector('.modal');
+const backdrop = document.querySelector('.backdrop');
 
-// const quote = 'A Modal Component on a Webpage - how hard could it be?';
-// const editedQuote = '';
-// outputParagraph.textContent = quote;
 
-// function closeModal() {
-//     modal.style.display = 'none';
-//     backdrop.style.display = 'none';   
-// }
 
-// buttons[2].addEventListener("click", function() {
-//     modal.style.display = 'block';
-//     backdrop.style.display = 'block';
-//     editedQuote = quote;
-//     textEdit.value = quote;
-// });
 
-// buttons[0].addEventListener('click', closeModal);
-// backdrop.addEventListener('click', closeModal);
 
+function closeModal() {
+    modal.style.display = 'none';
+    backdrop.style.display = 'none';   
+}
+
+developerInfoButton.addEventListener("click", function() {
+    modal.style.display = 'block';
+    backdrop.style.display = 'block';
+  
+});
+
+const exitButton = document.querySelector(".exit-button");
+exitButton.addEventListener('click', closeModal);
+backdrop.addEventListener('click', closeModal);
+
+
+
+
+
+
+
+
+const activateResetGame = document.querySelector(".reset-game");
+activateResetGame.addEventListener("click", () => {
+// donutMaker = new DonutMaker();
+    donutMaker.resetGame();
+    updateDonutCount(donutMaker);
+    updatedonutMultiplierCount(donutMaker);
+    // donutMaker.updateDonutMultiplierCount();
+    displayDonutMultiplierCost(donutMaker);
+    updateAutoClickerCount(donutMaker);
+    displayAutoClickerCost(donutMaker);
+});
 
 
 // buttons[1].addEventListener('click', function() {
