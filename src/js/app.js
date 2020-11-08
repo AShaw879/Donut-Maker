@@ -123,10 +123,42 @@ backdrop.addEventListener('click', closeModal);
 
 
 
+//-------------------------Modal Two-----------------------------------------
+
+const aboutUsButton = document.querySelector('.about-us-button');
+const modal2 = document.querySelector('.modal2');
+const backdrop2 = document.querySelector('.backdrop2');
 
 
 
 
+
+function closeModal2() {
+    modal2.style.display = 'none';
+    backdrop2.style.display = 'none';   
+}
+
+aboutUsButton.addEventListener("click", function() {
+    modal2.style.display = 'block';
+    backdrop2.style.display = 'block';
+  
+});
+
+const exitButton2 = document.querySelector(".exit-button2");
+exitButton2.addEventListener('click', closeModal2);
+backdrop2.addEventListener('click', closeModal2);
+
+
+
+
+
+
+
+
+
+
+
+//---------------------------Reset Button---------------------------------------------
 
 const activateResetGame = document.querySelector(".reset-game");
 activateResetGame.addEventListener("click", () => {
