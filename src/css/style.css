@@ -13,39 +13,28 @@ html {
     background-size: cover;
 }
 
-
-/* Dropdown Button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+ }
 
 .dropbtn {
-    background-color: rgb(255, 192, 250);
+    background-color: navy;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
 }
 
-
-/* The container <div> - needed to position the dropdown content */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-
-/* Dropdown Content (Hidden by Default) */
-
+/* hidden by default */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:rgb(255, 192, 250);
+    background-color:navy;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-
-
-/* Links inside the dropdown */
 
 .dropdown-content a {
     color:white;
@@ -54,27 +43,17 @@ html {
     display: block;
 }
 
-
-/* Change color of dropdown links on hover */
-
 .dropdown-content a:hover {
     background-color: #ddd;
 }
-
-
-/* Show the dropdown menu on hover */
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-
 .dropdown:hover .dropbtn {
     background-color:rgb(255, 192, 250) ;
 }
-
 
 .donut {
   background-color: navy; 
@@ -159,12 +138,6 @@ html {
     margin: 20px;
     cursor:pointer;
     border-radius: 4%;
-    
-    /* width: 200px;
-    height: 200px;
-    background-color: blueviolet;
-    font-size: 2rem;
-    text-align: center; */
 }
 
 .auto-clicker-count {
@@ -189,12 +162,7 @@ html {
     margin: 20px;
     cursor:pointer;
     border-radius: 4%;
-    /* width: 200px;
-    height: 200px;
-    background-color: blueviolet;
-    font-size: 2rem;
-    text-align: center; */
-}
+ }
 
 .donut-multiplier-count {
     font-size: 2rem;
@@ -218,15 +186,9 @@ html {
     margin: 20px;
     cursor: pointer;
     border-radius: 4%;
-    /* width: 200px;
-    height: 300px;
-    background-color: blueviolet;
-    font-size: 2rem;
-    text-align: center;  */
-}
+  }
 
-/* ----------------------------------Trying Modal----------------------------------------------- */
-
+  /* Modals*/
 .backdrop {
     display: none;
     position: fixed;
@@ -242,16 +204,14 @@ html {
     display: none;
     position: fixed;
     z-index: 200;
-    top: 20%;
+    top: 30%;
     left: 25%;
-    width: 50%;
-    height: 50%;
-    background: white;
+    width: 40%;
+    height: 40%;
+    background: rgb(255, 192, 250);
     box-shadow: 1px 1px 6px  rgba(0, 0, 0, 0.4);
     padding: 1rem;
 }
-
-/* ----------------------------------Trying Modal2----------------------------------------------- */
 
 .backdrop2 {
     display: none;
@@ -268,11 +228,11 @@ html {
     display: none;
     position: fixed;
     z-index: 200;
-    top: 20%;
+    top: 30%;
     left: 25%;
-    width: 50%;
-    height: 50%;
-    background: white;
+    width: 40%;
+    height: 40%;
+    background: rgb(255, 192, 250);;
     box-shadow: 1px 1px 6px  rgba(0, 0, 0, 0.4);
     padding: 1rem;
 }
@@ -282,28 +242,5 @@ html {
 
 
 
-/* .modal h1 {
-    color: #521751;
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
-}
-.modal-input {
-    margin: 0.5rem 0;
-}
 
-.modal-input textarea {
-    width: 25%;
-    font: inherit;
-    resize: none;
-}
-
-.modal-input textarea:focus {
-    outline: none;
-    background: #ffdbfe;
-    border-color: #521751;
-}
-
-.modal-actions {
-    text-align: right;
-} */
 

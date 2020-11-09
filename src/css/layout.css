@@ -3,13 +3,15 @@
     justify-content: center;
     }
 
-    .dropdown {
-        display: flex;
-        justify-content: flex-end;
+.dropdown {
+    display: flex;
+    justify-content: flex-end;
+}
 
-    }
-
-
+.dropbtn {
+    display: grid;
+    justify-content: flex-end;
+}
 
 main {
     width: 90%;
@@ -21,14 +23,14 @@ main {
     grid-gap: 20px;
    }
 
-   .donut-multiplier-text {
-       grid-column-start: 2;
-       grid-column-end: 3;
+.donut-multiplier-text {
+   grid-column-start: 2;
+   grid-column-end: 3;
    }
 
-   .donut-count {
-       grid-column-start: 1;
-       grid-column-end: 2;
+.donut-count {
+    grid-column-start: 1;
+    grid-column-end: 2;
    }
 
 .auto-clicker-text {
@@ -46,7 +48,6 @@ main {
     grid-column-end: 3;
 }
 
-
 .purchase-donut-multiplier-button {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -59,36 +60,3 @@ main {
 
 
 
-
-
-/* .main-title {
-  flex-direction:  */
-  /* justify-content: center;
-  align-items: flex-start; */
-   }
-
-   /* .dropdown {
-    margin:25px 25px 25px 0px;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-     } */
-
-     /* .dropdown {
-         position: relative;
-         display: inline-block;
-     } */
-
-     /* .parent {
-         margin:250px 25px 25px 25px;
-         padding:30px;
-         display: flex;
-         flex-flow: row nowrap;
-         align-items: center;
-         justify-content: center; */
- }
-    /* .donut {
-        margin: 30px 25px 25px 0px;
-        padding: 5px;
-        order: 0;
-    } */
