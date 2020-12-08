@@ -1,6 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .main-title {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-self: center;    
+    /* display: flex;
+    justify-content: center; */
     }
 
 .dropdown {

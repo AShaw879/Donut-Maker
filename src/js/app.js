@@ -4,6 +4,15 @@ import {
 
 const donutMaker = new DonutMaker();
 
+// setInterval(function() {
+//     donutMaker.acivateAutoClickers();
+//     updateDonutCount(donutMaker);
+//     updateAutoClickerCount(donutMaker);
+//     displayAutoClickerCost(donutMaker);
+//     updateDonutMultiplierCount(donutMaker);
+//     displayDonutMultiplierCost(donutMaker);
+// }, 1000);
+
 const updateDonutCount = function (donutMaker) {
     const donutCount = document.querySelector(".donut-count");
     donutCount.innerText = Math.round(donutMaker.donutCount * 10) / 10

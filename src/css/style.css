@@ -9,8 +9,9 @@
 }
 
 html {
-    background: url(/src/assets/donut-with-blueberries.jpg) no-repeat center center fixed;
-    background-size: cover;
+    /* background: url(/src/assets/donut-with-blueberries.jpg) no-repeat center center fixed;
+    background-size: cover; */
+    background-color: aqua;
 }
 
 .dropdown {
@@ -56,44 +57,44 @@ html {
 }
 
 .donut {
-  background-color: navy; 
-  border: none;
-  color: white;
-  padding: 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 20px;
-  cursor: pointer;
-  border-radius: 4%;
+    background-color:navy; 
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4%;
 }
 
 .purchase-auto-clicker-button {
-  background-color: blueviolet; 
-  border: none;
-  color: white;
-  padding: 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 20px;
-  cursor: pointer;
-  border-radius: 4%; 
-  opacity: 0.45;
+    background-color:blueviolet; 
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4%;
+    opacity: 0.45;
 }
 
 .purchase-donut-multiplier-button {
     background-color: plum; 
     border: none;
     color: white;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    margin: 20px;
+    font-size: 25px;
+    margin: 10px;
     cursor: pointer;
     border-radius: 4%;
     opacity: 0.45;
@@ -107,7 +108,7 @@ html {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 25px;
     margin: 20px;
     cursor: pointer;
     border-radius: 4%;
@@ -120,51 +121,48 @@ html {
 .gray-out-donut-multiplier-button {
     opacity: 1;
 }
-
+/* 
 .donut-count {
-    font-size: 3rem;
     text-align: center;
-}
+} */
 
 .donut-count-text {
-    background-color: navy; 
+    background-color:navy; 
     border: none;
     color: white;
-    padding: 30px;
+    padding: 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    margin: 20px;
-    cursor:pointer;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
     border-radius: 4%;
 }
 
-.auto-clicker-count {
-    font-size: 2rem;
+/* .auto-clicker-count {
     text-align: center; 
 }
 
 .auto-clicker-cost {
-    font-size: 2rem;
     text-align: center;
-}
+} */
 
 .auto-clicker-text {
     background-color:blueviolet; 
     border: none;
     color: white;
-    padding: 30px;
+    padding: 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    margin: 20px;
-    cursor:pointer;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
     border-radius: 4%;
  }
 
-.donut-multiplier-count {
+/* .donut-multiplier-count {
     font-size: 2rem;
     text-align: center;  
 }
@@ -172,18 +170,18 @@ html {
 .donut-multiplier-cost {
     font-size: 2rem;
     text-align: center;
-}
+} */
 
 .donut-multiplier-text {
     background-color: plum; 
     border: none;
     color: white;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    margin: 20px;
+    font-size: 25px;
+    margin: 10px;
     cursor: pointer;
     border-radius: 4%;
   }
